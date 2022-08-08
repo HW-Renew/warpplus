@@ -23,7 +23,7 @@
 ### 克隆仓库
 
 ```bash
-git clone --depth=1 https://github.com/Oreomeow/warpplus && cd warpplus
+git clone --depth=1 https://github.com/HW-Renew/warpplus && cd warpplus
 ```
 
 ### 安装依赖
