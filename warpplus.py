@@ -176,7 +176,7 @@ class WarpPlus(object):
             result = self.increase_quota()
             if result == 200:
                 g += 1
-                retry = WarpPlus.ran_sleep()
+                retry = WarpPlus.ran_sleep(3)
                 logging.info(f"[★] {name} ({user_id}) | {g} GB 流量已添加！")
                 try:
                     self._bot.delete_message(
@@ -194,7 +194,7 @@ class WarpPlus(object):
                     ).message_id
             else:
                 b += 1
-                retry = WarpPlus.ran_sleep(22.727153)
+                retry = WarpPlus.ran_sleep(3)
                 logging.info(f"[-] {name} ({user_id}) | {result}")
                 try:
                     self._bot.delete_message(
